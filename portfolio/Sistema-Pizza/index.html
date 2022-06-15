@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Estilo/estilo.css">
+    <script src="java/java.js"></script>
+</head>
+<body>
+    <section>
+      <h1>PIZZA DA EVELINE</h1>
+        <h2>O MELHOR DA VILA SÃO LUIS</h2>
+    </section>
+    <br>
+    <div id="secao_pizza">
+        <h3>Escolha a sua pizza</h3>
+
+        <div><input name="pizzas" type="radio" id="mussarela"><label for="mussarela">Mussarela</label></div>        
+
+        <div>
+            <input name="pizzas" type="radio" id="mista">
+            <label for="mista">Mista</label>
+        </div>
+
+        <div>
+            <input name="pizzas" type="radio" id="calabresa">
+            <label for="calabresa">Calabresa</label>
+        </div>
+
+        <div>
+          <button onclick="venda()">Adicionar</button>
+          <button onclick="estorno()">Retirar</button>
+       </div> 
+    </div>
+<section id="table">
+    <table>
+        <tr>
+            <th>Sabores</th>
+            <th>Quantidades</th>
+            <th>Valores</th>
+        </tr>
+        <tr>
+            <td>Mussarela</td>
+            <td id="resultadomussarela"></td>
+            <td id="vendamussarela"></td>
+        </tr>
+        <tr>
+            <td>Mista</td><td><div id="resultadomista"></div></td><td><div id="vendamista"></div></td>
+        </tr>
+        <tr>
+            <td>Calabresa</td><td><div id="resultadocalabresa"></div></td><td><div id="vendacalabresa"></div></td>
+        </tr>
+
+    </table>
+    <button id="enviar">Enviar</button>
+</section>
+</body>
+</html>
